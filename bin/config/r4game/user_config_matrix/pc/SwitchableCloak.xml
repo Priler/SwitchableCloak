@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<UserConfig>
+		<Group id="ModSwitchableCloak" displayName="Mods.priler_switchable_cloak">
+			<PresetsArray>
+				<Preset id="0" displayName="njs_default">
+					<Entry varId="ModSwitchableCloakPlayCloakAnimations"  value="true"/>
+					<Entry varId="ModSwitchableCloakPlayHoodAnimations"  value="false"/>
+					<Entry varId="ModSwitchableCloakUnequipDuringFistFightMinigame" value="true"/>
+					<Entry varId="ModSwitchableCloakAllowForHoodsEtc"  value="false"/>
+					<Entry varId="ModSwitchableCloakIsDebugEnabled"  value="false"/>
+				</Preset>
+				<Preset id="0" displayName="njs_all">
+					<Entry varId="ModSwitchableCloakPlayCloakAnimations"  value="true"/>
+					<Entry varId="ModSwitchableCloakPlayHoodAnimations"  value="true"/>
+					<Entry varId="ModSwitchableCloakUnequipDuringFistFightMinigame" value="true"/>
+					<Entry varId="ModSwitchableCloakAllowForHoodsEtc"  value="true"/>
+					<Entry varId="ModSwitchableCloakIsDebugEnabled"  value="false"/>
+				</Preset>
+			</PresetsArray>
+			<VisibleVars>
+				<Var id="ModSwitchableCloakPlayCloakAnimations" displayName="panel_priler_play_cloak_animations" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+
+				<Var id="ModSwitchableCloakPlayHoodAnimations" displayName="panel_priler_play_hood_animations" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+
+				<Var id="ModSwitchableCloakUnequipDuringFistFightMinigame" displayName="panel_priler_unequip_during_fist_fight_minigame" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+
+				<Var id="ModSwitchableCloakAllowForHoodsEtc" displayName="panel_priler_allow_hoods_etc" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+
+				<Var id="ModSwitchableCloakIsDebugEnabled" displayName="panel_priler_is_debug_enabled" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+			</VisibleVars>
+		</Group>
+</UserConfig>

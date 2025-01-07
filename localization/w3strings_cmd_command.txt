@@ -1,0 +1,3 @@
+w3strings.exe -e en --id-space 3333
+w3strings.exe -e ru --id-space 3333
+etc ...
