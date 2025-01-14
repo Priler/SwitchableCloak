@@ -1,0 +1,2 @@
+- Optimization
+- Unequip cloaks/capes during barber visits

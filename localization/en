@@ -2,11 +2,13 @@
 ; id | key(hex) | key(str) | text
 2113333000||panel_Mods|Mods
 2113333001||panel_priler_switchable_cloak|Switchable Cloak
-2113333002||panel_priler_is_debug_enabled|Is Debug?
+2113333002||panel_priler_is_debug_enabled|Is debug
 2113333003||panel_priler_unequip_during_fist_fight_minigame|Unequip during fist fight minigame
-2113333004||panel_priler_allow_hoods_etc|Enable for hoods etc.
+2113333004||panel_priler_allow_hoods_etc|Enable for hoods
 2113333005||preset_Mods_priler_switchable_cloak|Switchable Cloak
 2113333006||preset_value_njs_default|Default
 2113333007||preset_value_njs_all|All
-2113333008||panel_priler_play_cloak_animations|Animate cloaks etc.
-2113333009||panel_priler_play_hood_animations|Animate hoods etc.
+2113333008||panel_priler_play_cloak_animations|Animate cloaks
+2113333009||panel_priler_play_hood_animations|Animate hoods
+2113333010||panel_priler_allow_switch_on_horse|Allow toggling while horse riding
+2113333011||panel_priler_unequip_during_barber|Unequip during barber visits

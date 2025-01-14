@@ -2,11 +2,13 @@
 ; id | key(hex) | key(str) | text
 2113333000||panel_Mods|Моды
 2113333001||panel_priler_switchable_cloak|Переключаемые Плащи
-2113333002||panel_priler_is_debug_enabled|Дебаг Включен?
+2113333002||panel_priler_is_debug_enabled|Дебаг включен
 2113333003||panel_priler_unequip_during_fist_fight_minigame|Снимать плащ в кулачных боях
-2113333004||panel_priler_allow_hoods_etc|Учитывать капюшоны и тд.
+2113333004||panel_priler_allow_hoods_etc|Учитывать капюшоны
 2113333005||preset_Mods_priler_switchable_cloak|Переключаемые Плащи
 2113333006||preset_value_njs_default|По умолчанию
 2113333007||preset_value_njs_all|Всё
-2113333008||panel_priler_play_cloak_animations|Анимация плащей и тд. 
-2113333009||panel_priler_play_hood_animations|Анимация капюшонов и тд.
+2113333008||panel_priler_play_cloak_animations|Анимация плащей
+2113333009||panel_priler_play_hood_animations|Анимация капюшонов
+2113333010||panel_priler_allow_switch_on_horse|Разрешать переключать плащи верхом на лошади
+2113333011||panel_priler_unequip_during_barber|Снимать плащ во время стрижки

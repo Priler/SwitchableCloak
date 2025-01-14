@@ -1,7 +1,9 @@
 ### HOW TO INSTALL ###
 1) Unpack mod_hoodsSwitchableCloak folder into your Mods folder
 2) Copy-paste the content of mod_hoodsSwitchableCloak/SwitchableCloak.input.settings at the top of your Documents\The Witcher 3\input.settings file
-4) (Optional) Copy mod_hoodsSwitchableCloak/bin folder to your game root directory
+3) (Optional) Copy mod_hoodsSwitchableCloak/bin folder to your game root directory
    And then use Menu Filelist Updater (https://www.nexusmods.com/witcher3/mods/7171) or manually add new .xml to your dx11/dx12 txt list
 
-4) That's it.
+4) Use a Script Merger, just to be sure there are no conflicts with other mods
+
+5) That's it.
