@@ -1,6 +1,7 @@
 import os
 import shutil
 import sys
+import subprocess
 from pathlib import Path
 
 def get_script_directory():
@@ -79,6 +80,34 @@ def main():
         setup_logging("Copied scripts directory contents to target location")
     else:
         setup_logging("Warning: Scripts directory not found")
+
+    # 6) Run localization make.py script
+    localization_script = script_dir / "localization" / "make.py"
+    if localization_script.exists():
+        setup_logging("Running localization script...")
+        try:
+            subprocess.run([sys.executable, str(localization_script)], check=True)
+            setup_logging("Localization script completed successfully")
+        except subprocess.CalledProcessError as e:
+            setup_logging(f"Error running localization script: {str(e)}")
+            raise
+
+    # 7) Remove .w3strings files from build/mod_hoodsSwitchableCloak/content
+    content_dir = build_dir / "mod_hoodsSwitchableCloak" / "content"
+    if content_dir.exists():
+        for w3strings_file in content_dir.rglob("*.w3strings"):
+            w3strings_file.unlink()
+            setup_logging(f"Removed .w3strings file: {w3strings_file.relative_to(content_dir)}")
+
+    # 8) Copy .w3strings files from localization/out to build/mod_hoodsSwitchableCloak/content
+    localization_out = script_dir / "localization" / "out"
+    if localization_out.exists():
+        for w3strings_file in localization_out.glob("*.w3strings"):
+            dst_file = content_dir / w3strings_file.name
+            shutil.copy2(w3strings_file, dst_file)
+            setup_logging(f"Copied .w3strings file: {w3strings_file.name}")
+    else:
+        setup_logging("Warning: Localization output directory not found")
 
     print("\n[BUILD] Done! Build process completed successfully.")
     input()
