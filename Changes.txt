@@ -1,2 +1,4 @@
-- Optimization
-- Unequip cloaks/capes during barber visits
+- Animations code was rewritten from the scratch
+- Multiple animations improvements
+- Fixed bug when animations was not playing sometimes
+- Other small bugfixes
