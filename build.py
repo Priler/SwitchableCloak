@@ -81,6 +81,7 @@ def main():
         setup_logging("Warning: Scripts directory not found")
 
     print("\n[BUILD] Done! Build process completed successfully.")
+    input()
 
 if __name__ == "__main__":
     try:
