@@ -12,3 +12,9 @@
 2113333009||panel_priler_play_hood_animations|Анимация капюшонов
 2113333010||panel_priler_allow_switch_on_horse|Разрешать переключать плащи верхом на лошади
 2113333011||panel_priler_unequip_during_barber|Снимать плащ во время стрижки
+2113333013||panel_priler_allow_auto_equip_when_rain|Авто надевать плащ в <font color="#bdda57">ДОЖДЬ</font>
+2113333014||panel_priler_allow_auto_equip_when_storm|Авто надевать плащ в <font color="#8EA4C8">ШТОРМ</font>
+2113333015||panel_priler_allow_auto_equip_when_snow|Авто надевать плащ в <font color="#42aaff">СНЕГ</font>
+2113333016||panel_priler_allow_auto_equip_when_cold|Авто надевать когда <font color="#87cefa">ХОЛОДНО</font>
+2113333017||panel_priler_allow_commenting_on_auto_equip|Разрешать <font color="#28a745">комментарии</font> при авто надевании плаща
+2113333018||panel_priler_auto_equip_cloaks_only|Авто надевать <font color="#8EA4C8">только плащи/накидки</font> (игнор шляпы/шарфы и тд)

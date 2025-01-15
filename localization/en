@@ -12,3 +12,9 @@
 2113333009||panel_priler_play_hood_animations|Animate hoods
 2113333010||panel_priler_allow_switch_on_horse|Allow toggling while horse riding
 2113333011||panel_priler_unequip_during_barber|Unequip during barber visits
+2113333013||panel_priler_allow_auto_equip_when_rain|Automatically equip cloak during <font color="#bdda57">RAIN</font> weather
+2113333014||panel_priler_allow_auto_equip_when_storm|Automatically equip cloak during <font color="#8EA4C8">STORM</font> weather
+2113333015||panel_priler_allow_auto_equip_when_snow|Automatically equip cloak during <font color="#42aaff">SNOW</font> weather
+2113333016||panel_priler_allow_auto_equip_when_cold|Automatically equip cloak during <font color="#87cefa">COLD</font> weather
+2113333017||panel_priler_allow_commenting_on_auto_equip|Allow <font color="#28a745">comments</font> when auto equip
+2113333018||panel_priler_auto_equip_cloaks_only|Auto equip <font color="#8EA4C8">only cloaks/capes</font> (ignore hoods/scarfs etc)

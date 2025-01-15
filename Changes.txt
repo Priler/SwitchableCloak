@@ -1,3 +1,4 @@
+- Auto equip cloaks during bad weather (rain, storm, snow etc)
 - Animations code was rewritten from the scratch
 - Multiple animations improvements
 - Fixed bug when animations was not playing sometimes

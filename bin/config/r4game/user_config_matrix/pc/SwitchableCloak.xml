@@ -10,6 +10,12 @@
 					<Entry varId="ModSwitchableCloakUnequipDuringBarber" value="true"/>
 					<Entry varId="ModSwitchableCloakAllowForHoodsEtc"  value="false"/>
 					<Entry varId="ModSwitchableCloakAllowSwitchOnHorse"  value="true"/>
+					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenRain"  value="false"/>
+					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenStorm"  value="false"/>
+					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenSnow"  value="false"/>
+					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenCold"  value="false"/>
+					<Entry varId="ModSwitchableCloakAllowCommentingOnAutoEquip"  value="false"/>
+					<Entry varId="ModSwitchableCloakAutoEquipCloaksOnly"  value="false"/>
 					<Entry varId="ModSwitchableCloakIsDebugEnabled"  value="false"/>
 				</Preset>
 				<Preset id="1" displayName="njs_all">
@@ -19,6 +25,12 @@
 					<Entry varId="ModSwitchableCloakUnequipDuringBarber" value="true"/>
 					<Entry varId="ModSwitchableCloakAllowForHoodsEtc"  value="true"/>
 					<Entry varId="ModSwitchableCloakAllowSwitchOnHorse"  value="true"/>
+					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenRain"  value="true"/>
+					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenStorm"  value="true"/>
+					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenSnow"  value="true"/>
+					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenCold"  value="true"/>
+					<Entry varId="ModSwitchableCloakAllowCommentingOnAutoEquip"  value="true"/>
+					<Entry varId="ModSwitchableCloakAutoEquipCloaksOnly"  value="true"/>
 					<Entry varId="ModSwitchableCloakIsDebugEnabled"  value="false"/>
 				</Preset>
 			</PresetsArray>
@@ -34,6 +46,15 @@
 				<Var id="ModSwitchableCloakAllowForHoodsEtc" displayName="panel_priler_allow_hoods_etc" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 
 				<Var id="ModSwitchableCloakAllowSwitchOnHorse" displayName="panel_priler_allow_switch_on_horse" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+
+				<Var id="ModSwitchableCloakAllowAutoEquipWhenRain" displayName="panel_priler_allow_auto_equip_when_rain" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="ModSwitchableCloakAllowAutoEquipWhenStorm" displayName="panel_priler_allow_auto_equip_when_storm" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="ModSwitchableCloakAllowAutoEquipWhenSnow" displayName="panel_priler_allow_auto_equip_when_snow" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="ModSwitchableCloakAllowAutoEquipWhenCold" displayName="panel_priler_allow_auto_equip_when_cold" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+
+				<Var id="ModSwitchableCloakAllowCommentingOnAutoEquip" displayName="panel_priler_allow_commenting_on_auto_equip" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				
+				<Var id="ModSwitchableCloakAutoEquipCloaksOnly" displayName="panel_priler_auto_equip_cloaks_only" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 
 				<Var id="ModSwitchableCloakIsDebugEnabled" displayName="panel_priler_is_debug_enabled" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 			</VisibleVars>
