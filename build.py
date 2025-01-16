@@ -57,7 +57,7 @@ def main():
     # 4) Copy specified folders
     folders_to_copy = [
         "bin",
-        "Compatibility Patches",
+        # "Compatibility Patches",
         "mod_hoodsSwitchableCloak"
     ]
     
