@@ -1,9 +1,33 @@
-### HOW TO INSTALL ###
-1) Unpack mod_hoodsSwitchableCloak folder into your Mods folder
-2) Copy-paste the content of mod_hoodsSwitchableCloak/SwitchableCloak.input.settings at the top of your Documents\The Witcher 3\input.settings file
-3) (Optional) Copy mod_hoodsSwitchableCloak/bin folder to your game root directory
-   And then use Menu Filelist Updater (https://www.nexusmods.com/witcher3/mods/7171) or manually add new .xml to your dx11/dx12 txt list
+#######################
+### HOW TO INSTALL? ###
+#######################
 
-4) Use a Script Merger, just to be sure there are no conflicts with other mods
+1) Unpack 📁mod_hoodsSwitchableCloak folder into your 📁Mods folder
+
+2) Copy-paste the content of 📄mod_hoodsSwitchableCloak/SwitchableCloak.input.settings at the top of your 📄Documents\The Witcher 3\input.settings file
+
+3) (Optional) Copy 📁mod_hoodsSwitchableCloak/bin folder to your game root directory
+   And then use Menu Filelist Updater (link below) or manually add new .xml to your dx11/dx12 txt list.
+
+4) Use a Script Merger or Script Merger FAE (links below), just to be sure there are no conflicts with other mods
 
 5) That's it.
+
+
+#############
+### LINKS ###
+#############
+
+🔗 Menu Filelist Update - https://www.nexusmods.com/witcher3/mods/7171
+🔗 Script Merger - https://www.nexusmods.com/witcher3/mods/484
+🔗 Script Merger FAE - https://www.nexusmods.com/witcher3/mods/8405
+🔗 My YouTube channel - https://www.youtube.com/@howdy_official?sub_confirmation=1
+
+
+##########################
+### SUPPORT THE AUTHOR ###
+##########################
+
+Creating mods is purely driven by enthusiasm.
+I'd really appreciate it if you could support me by subscribing to my YouTube channel - https://www.youtube.com/@howdy_official?sub_confirmation=1
+It's focused on modding, programming, VR, AI, and more.

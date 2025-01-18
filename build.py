@@ -42,6 +42,7 @@ def main():
     # 3) Copy specified files
     files_to_copy = [
         "HowToInstall.txt",
+        "HowToUpdate.txt",
         "SwitchableCloak.input.settings"
     ]
     

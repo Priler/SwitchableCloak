@@ -1,5 +1,4 @@
-- Auto equip cloaks during bad weather (rain, storm, snow etc)
-- Animations code was rewritten from the scratch
-- Multiple animations improvements
-- Fixed bug when animations was not playing sometimes
-- Other small bugfixes
+- Auto equip mechanic improvements & bugfixes
+- Auto unequip mechanic
+- Better mod menu
+- 

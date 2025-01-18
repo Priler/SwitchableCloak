@@ -1,0 +1,39 @@
+######################
+### HOW TO UPDATE? ###
+######################
+
+1) If updating from previous versions, first completely remove 📁mod_hoodsSwitchableCloak folder from your 📁Mods folder
+
+   * Please avoid using the overwrite method — when I say to remove a folder, I mean you should delete it entirely.
+
+2) Then, unpack new 📁mod_hoodsSwitchableCloak folder into your 📁Mods folder
+
+3) Make sure to update mod menu.
+   Copy 📁mod_hoodsSwitchableCloak/bin folder to your game root directory.
+   And then use Menu Filelist Updater (link below) or manually add new .xml to your dx11/dx12 txt list.
+
+4) [IMPORTANT] Use a Script Merger or Script Merger FAE (links below), just to be sure there are no conflicts with other mods
+
+5) Run the game and be sure to double check mod menu options (make them default, if required)
+   * Sometime they can be turned off after update, so this is important step.
+
+6) That's it.
+
+
+#############
+### LINKS ###
+#############
+
+🔗 Menu Filelist Update - https://www.nexusmods.com/witcher3/mods/7171
+🔗 Script Merger - https://www.nexusmods.com/witcher3/mods/484
+🔗 Script Merger FAE - https://www.nexusmods.com/witcher3/mods/8405
+🔗 My YouTube channel - https://www.youtube.com/@howdy_official?sub_confirmation=1
+
+
+##########################
+### SUPPORT THE AUTHOR ###
+##########################
+
+Creating mods is purely driven by enthusiasm.
+I'd really appreciate it if you could support me by subscribing to my YouTube channel - https://www.youtube.com/@howdy_official?sub_confirmation=1
+It's focused on modding, programming, VR, AI, and more.

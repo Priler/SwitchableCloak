@@ -1,62 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <UserConfig>
-		<Group id="ModSwitchableCloak" displayName="Mods.priler_switchable_cloak">
+		<!-- GENERAL -->
+		<Group id="ModSwitchableCloakGeneral" displayName="Mods.priler_switchable_cloak.priler_section_general">
 			<PresetsArray>
 				<Preset id="0" displayName="njs_default">
-					<Entry varId="ModSwitchableCloakPlayCloakAnimations"  value="true"/>
-					<Entry varId="ModSwitchableCloakPlayHoodAnimations"  value="false"/>
-					<Entry varId="ModSwitchableCloakUnequipDuringFistFightMinigame" value="true"/>
-					<Entry varId="ModSwitchableCloakUnequipDuringBarber" value="true"/>
-					<Entry varId="ModSwitchableCloakAllowForHoodsEtc"  value="false"/>
-					<Entry varId="ModSwitchableCloakAllowSwitchOnHorse"  value="true"/>
-					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenRain"  value="false"/>
-					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenStorm"  value="false"/>
-					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenSnow"  value="false"/>
-					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenCold"  value="false"/>
-					<Entry varId="ModSwitchableCloakAllowCommentingOnAutoEquip"  value="false"/>
-					<Entry varId="ModSwitchableCloakAutoEquipCloaksOnly"  value="false"/>
-					<Entry varId="ModSwitchableCloakIsDebugEnabled"  value="false"/>
+					<Entry varId="ModEnabled"  value="true"/>
+					<Entry varId="PlayCloakAnimations"  value="true"/>
+					<Entry varId="PlayHoodAnimations"  value="true"/>
+					<Entry varId="UnequipDuringFistFightMinigame" value="true"/>
+					<Entry varId="UnequipDuringBarber" value="true"/>
+					<Entry varId="AllowForHoodsEtc"  value="true"/>
+					<Entry varId="AllowSwitchOnHorse"  value="true"/>
 				</Preset>
-				<Preset id="1" displayName="njs_all">
-					<Entry varId="ModSwitchableCloakPlayCloakAnimations"  value="true"/>
-					<Entry varId="ModSwitchableCloakPlayHoodAnimations"  value="true"/>
-					<Entry varId="ModSwitchableCloakUnequipDuringFistFightMinigame" value="true"/>
-					<Entry varId="ModSwitchableCloakUnequipDuringBarber" value="true"/>
-					<Entry varId="ModSwitchableCloakAllowForHoodsEtc"  value="true"/>
-					<Entry varId="ModSwitchableCloakAllowSwitchOnHorse"  value="true"/>
-					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenRain"  value="true"/>
-					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenStorm"  value="true"/>
-					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenSnow"  value="true"/>
-					<Entry varId="ModSwitchableCloakAllowAutoEquipWhenCold"  value="true"/>
-					<Entry varId="ModSwitchableCloakAllowCommentingOnAutoEquip"  value="true"/>
-					<Entry varId="ModSwitchableCloakAutoEquipCloaksOnly"  value="true"/>
-					<Entry varId="ModSwitchableCloakIsDebugEnabled"  value="false"/>
+				<Preset id="1" displayName="njs_cloaks_only">
+					<Entry varId="ModEnabled"  value="true"/>
+					<Entry varId="PlayCloakAnimations"  value="true"/>
+					<Entry varId="PlayHoodAnimations"  value="false"/>
+					<Entry varId="UnequipDuringFistFightMinigame" value="true"/>
+					<Entry varId="UnequipDuringBarber" value="true"/>
+					<Entry varId="AllowForHoodsEtc"  value="false"/>
+					<Entry varId="AllowSwitchOnHorse"  value="true"/>
 				</Preset>
 			</PresetsArray>
 			<VisibleVars>
-				<Var id="ModSwitchableCloakPlayCloakAnimations" displayName="panel_priler_play_cloak_animations" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="ModEnabled" displayName="panel_priler_mod_enabled" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AllowForHoodsEtc" displayName="panel_priler_allow_hoods_etc" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 
-				<Var id="ModSwitchableCloakPlayHoodAnimations" displayName="panel_priler_play_hood_animations" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="PlayCloakAnimations" displayName="panel_priler_play_cloak_animations" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="PlayHoodAnimations" displayName="panel_priler_play_hood_animations" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 
-				<Var id="ModSwitchableCloakUnequipDuringFistFightMinigame" displayName="panel_priler_unequip_during_fist_fight_minigame" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="UnequipDuringFistFightMinigame" displayName="panel_priler_unequip_during_fist_fight_minigame" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="UnequipDuringBarber" displayName="panel_priler_unequip_during_barber" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 
-				<Var id="ModSwitchableCloakUnequipDuringBarber" displayName="panel_priler_unequip_during_barber" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AllowSwitchOnHorse" displayName="panel_priler_allow_switch_on_horse" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+			</VisibleVars>
+		</Group>
 
-				<Var id="ModSwitchableCloakAllowForHoodsEtc" displayName="panel_priler_allow_hoods_etc" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+		<!-- AUTO EQUIP -->
+		<Group id="ModSwitchableCloakAutoEquip" displayName="Mods.priler_switchable_cloak.priler_section_auto_equip">
+			<PresetsArray>
+				<Preset id="0" displayName="njs_disable">
+					<Entry varId="AllowAutoEquipWhenRain"  value="false"/>
+					<Entry varId="AllowAutoEquipWhenStorm"  value="false"/>
+					<Entry varId="AllowAutoEquipWhenSnow"  value="false"/>
+					<Entry varId="AllowAutoEquipWhenCold"  value="false"/>
+					<Entry varId="AllowCommentingOnAutoEquip"  value="false"/>
+					<Entry varId="AutoEquipCloaksOnly"  value="false"/>
+					<Entry varId="AutoEquipIgnoreAnimation"  value="false"/>
+					<Entry varId="AutoEquipInCombat"  value="false"/>
+					<Entry varId="AutoEquipInInterior"  value="false"/>
+					<Entry varId="AutoEquipInCutscenes"  value="false"/>
+					<Entry varId="AutoEquipAnyState"  value="false"/>
+				</Preset>
+				<Preset id="1" displayName="njs_enable">
+					<Entry varId="AllowAutoEquipWhenRain"  value="true"/>
+					<Entry varId="AllowAutoEquipWhenStorm"  value="true"/>
+					<Entry varId="AllowAutoEquipWhenSnow"  value="true"/>
+					<Entry varId="AllowAutoEquipWhenCold"  value="true"/>
+					<Entry varId="AllowCommentingOnAutoEquip"  value="true"/>
+					<Entry varId="AutoEquipCloaksOnly"  value="false"/>
+					<Entry varId="AutoEquipIgnoreAnimation"  value="false"/>
+					<Entry varId="AutoEquipInCombat"  value="false"/>
+					<Entry varId="AutoEquipInInterior"  value="false"/>
+					<Entry varId="AutoEquipInCutscenes"  value="false"/>
+					<Entry varId="AutoEquipAnyState"  value="false"/>
+				</Preset>
+				<Preset id="2" displayName="njs_all">
+					<Entry varId="AllowAutoEquipWhenRain"  value="true"/>
+					<Entry varId="AllowAutoEquipWhenStorm"  value="true"/>
+					<Entry varId="AllowAutoEquipWhenSnow"  value="true"/>
+					<Entry varId="AllowAutoEquipWhenCold"  value="true"/>
+					<Entry varId="AllowCommentingOnAutoEquip"  value="true"/>
+					<Entry varId="AutoEquipCloaksOnly"  value="false"/>
+					<Entry varId="AutoEquipIgnoreAnimation"  value="true"/>
+					<Entry varId="AutoEquipInCombat"  value="true"/>
+					<Entry varId="AutoEquipInInterior"  value="true"/>
+					<Entry varId="AutoEquipInCutscenes"  value="true"/>
+					<Entry varId="AutoEquipAnyState"  value="true"/>
+				</Preset>
+			</PresetsArray>
+			<VisibleVars>
+				<Var id="AllowAutoEquipWhenRain" displayName="panel_priler_allow_auto_equip_when_rain" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AllowAutoEquipWhenStorm" displayName="panel_priler_allow_auto_equip_when_storm" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AllowAutoEquipWhenSnow" displayName="panel_priler_allow_auto_equip_when_snow" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AllowAutoEquipWhenCold" displayName="panel_priler_allow_auto_equip_when_cold" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 
-				<Var id="ModSwitchableCloakAllowSwitchOnHorse" displayName="panel_priler_allow_switch_on_horse" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AllowCommentingOnAutoEquip" displayName="panel_priler_allow_commenting_on_auto_equip" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AutoEquipCloaksOnly" displayName="panel_priler_auto_equip_cloaks_only" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AutoEquipIgnoreAnimation" displayName="panel_priler_auto_equip_ignore_animation" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 
-				<Var id="ModSwitchableCloakAllowAutoEquipWhenRain" displayName="panel_priler_allow_auto_equip_when_rain" displayType="TOGGLE" tags="customNames;customDisplayName"/>
-				<Var id="ModSwitchableCloakAllowAutoEquipWhenStorm" displayName="panel_priler_allow_auto_equip_when_storm" displayType="TOGGLE" tags="customNames;customDisplayName"/>
-				<Var id="ModSwitchableCloakAllowAutoEquipWhenSnow" displayName="panel_priler_allow_auto_equip_when_snow" displayType="TOGGLE" tags="customNames;customDisplayName"/>
-				<Var id="ModSwitchableCloakAllowAutoEquipWhenCold" displayName="panel_priler_allow_auto_equip_when_cold" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AutoEquipInCombat" displayName="panel_priler_auto_equip_in_combat" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AutoEquipInInterior" displayName="panel_priler_auto_equip_in_interior" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AutoEquipInCutscenes" displayName="panel_priler_auto_equip_in_cutscenes" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AutoEquipAnyState" displayName="panel_priler_auto_equip_anystate" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+			</VisibleVars>
+		</Group>
 
-				<Var id="ModSwitchableCloakAllowCommentingOnAutoEquip" displayName="panel_priler_allow_commenting_on_auto_equip" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+		<!-- AUTO UNEQUIP -->
+		<Group id="ModSwitchableCloakAutoUnequip" displayName="Mods.priler_switchable_cloak.priler_section_auto_unequip">
+			<PresetsArray>
+				<Preset id="0" displayName="njs_disable">
+					<Entry varId="AllowAutoUnequipInCombat"  value="false"/>
+					<Entry varId="AllowAutoUnequipInInterior"  value="false"/>
+					<Entry varId="AllowAutoUnequipInCutscenes"  value="false"/>
+					<Entry varId="AllowAutoEquipBackInCombat"  value="false"/>
+					<Entry varId="AllowAutoEquipBackInInterior"  value="false"/>
+					<Entry varId="AllowAutoEquipBackInCutscenes"  value="false"/>
+					<Entry varId="AutoUnequipCloaksOnly" value="false"/>
+					<Entry varId="AutoUnequipIgnoreAnimation" value="false"/>
+				</Preset>
+				<Preset id="1" displayName="njs_enable">
+					<Entry varId="AllowAutoUnequipInCombat"  value="true"/>
+					<Entry varId="AllowAutoUnequipInInterior"  value="true"/>
+					<Entry varId="AllowAutoUnequipInCutscenes"  value="true"/>
+					<Entry varId="AllowAutoEquipBackInCombat"  value="false"/>
+					<Entry varId="AllowAutoEquipBackInInterior"  value="false"/>
+					<Entry varId="AllowAutoEquipBackInCutscenes"  value="false"/>
+					<Entry varId="AutoUnequipCloaksOnly" value="true"/>
+					<Entry varId="AutoUnequipIgnoreAnimation" value="true"/>
+				</Preset>
+				<Preset id="2" displayName="njs_all">
+					<Entry varId="AllowAutoUnequipInCombat"  value="true"/>
+					<Entry varId="AllowAutoUnequipInInterior"  value="true"/>
+					<Entry varId="AllowAutoUnequipInCutscenes"  value="true"/>
+					<Entry varId="AllowAutoEquipBackInCombat"  value="true"/>
+					<Entry varId="AllowAutoEquipBackInInterior"  value="true"/>
+					<Entry varId="AllowAutoEquipBackInCutscenes"  value="true"/>
+					<Entry varId="AutoUnequipCloaksOnly" value="true"/>
+					<Entry varId="AutoUnequipIgnoreAnimation" value="true"/>
+				</Preset>
+			</PresetsArray>
+			<VisibleVars>
+				<Var id="AllowAutoUnequipInCombat" displayName="panel_priler_auto_unequip_in_combat" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AllowAutoUnequipInInterior" displayName="panel_priler_auto_unequip_in_interior" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AllowAutoUnequipInCutscenes" displayName="panel_priler_auto_unequip_in_cutscenes" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+
+				<Var id="AllowAutoEquipBackInCombat" displayName="panel_priler_auto_equip_back_in_combat" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AllowAutoEquipBackInInterior" displayName="panel_priler_auto_equip_back_in_interior" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AllowAutoEquipBackInCutscenes" displayName="panel_priler_auto_equip_back_in_cutscenes" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 				
-				<Var id="ModSwitchableCloakAutoEquipCloaksOnly" displayName="panel_priler_auto_equip_cloaks_only" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AutoUnequipCloaksOnly" displayName="panel_priler_auto_unequip_cloaks_only" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 
-				<Var id="ModSwitchableCloakIsDebugEnabled" displayName="panel_priler_is_debug_enabled" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AutoUnequipIgnoreAnimation" displayName="panel_priler_auto_unequip_ignore_animation" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+			</VisibleVars>
+		</Group>
+
+		<!-- OTHER -->
+		<Group id="ModSwitchableCloakOther" displayName="Mods.priler_switchable_cloak.priler_section_other">
+			<VisibleVars>
+				<Var id="IsDebugEnabled" displayName="panel_priler_is_debug_enabled" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 			</VisibleVars>
 		</Group>
 </UserConfig>

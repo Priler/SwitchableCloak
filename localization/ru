@@ -1,20 +1,46 @@
 ;meta[language=en]
 ; id | key(hex) | key(str) | text
-2113333000||panel_Mods|Моды
-2113333001||panel_priler_switchable_cloak|Переключаемые Плащи
-2113333002||panel_priler_is_debug_enabled|Дебаг включен
-2113333003||panel_priler_unequip_during_fist_fight_minigame|Снимать плащ в кулачных боях
-2113333004||panel_priler_allow_hoods_etc|Учитывать капюшоны
-2113333005||preset_Mods_priler_switchable_cloak|Переключаемые Плащи
-2113333006||preset_value_njs_default|По умолчанию
-2113333007||preset_value_njs_all|Всё
-2113333008||panel_priler_play_cloak_animations|Анимация плащей
-2113333009||panel_priler_play_hood_animations|Анимация капюшонов
-2113333010||panel_priler_allow_switch_on_horse|Разрешать переключать плащи верхом на лошади
-2113333011||panel_priler_unequip_during_barber|Снимать плащ во время стрижки
-2113333013||panel_priler_allow_auto_equip_when_rain|Авто надевать плащ в <font color="#bdda57">ДОЖДЬ</font>
-2113333014||panel_priler_allow_auto_equip_when_storm|Авто надевать плащ в <font color="#8EA4C8">ШТОРМ</font>
-2113333015||panel_priler_allow_auto_equip_when_snow|Авто надевать плащ в <font color="#42aaff">СНЕГ</font>
-2113333016||panel_priler_allow_auto_equip_when_cold|Авто надевать когда <font color="#87cefa">ХОЛОДНО</font>
-2113333017||panel_priler_allow_commenting_on_auto_equip|Разрешать <font color="#28a745">комментарии</font> при авто надевании плаща
-2113333018||panel_priler_auto_equip_cloaks_only|Авто надевать <font color="#8EA4C8">только плащи/накидки</font> (игнор шляпы/шарфы и тд)
+2110172000||panel_Mods|Моды
+2110172001||panel_priler_switchable_cloak|Переключаемые Плащи
+2110172002||panel_priler_is_debug_enabled|Дебаг включен
+2110172003||panel_priler_unequip_during_fist_fight_minigame|Снимать плащ в кулачных боях
+2110172004||panel_priler_allow_hoods_etc|Учитывать капюшоны/шарфы/шляпы/маски
+2110172005||preset_Mods_priler_switchable_cloak|Переключаемые Плащи от Priler
+2110172006||preset_value_njs_default|По умолчанию
+2110172007||preset_value_njs_all|Всё
+2110172008||panel_priler_play_cloak_animations|Анимация плащей/накидок
+2110172009||panel_priler_play_hood_animations|Анимация капюшонов/шарфов/шляп/масок
+2110172010||panel_priler_allow_switch_on_horse|Разрешать переключать верхом на лошади
+2110172011||panel_priler_unequip_during_barber|Снимать во время визита к парикмахеру
+2110172013||panel_priler_allow_auto_equip_when_rain|Авто надевать плащ в <font color="#bdda57">ДОЖДЬ</font>
+2110172014||panel_priler_allow_auto_equip_when_storm|Авто надевать плащ в <font color="#8EA4C8">ШТОРМ</font>
+2110172015||panel_priler_allow_auto_equip_when_snow|Авто надевать плащ в <font color="#42aaff">СНЕГ</font>
+2110172016||panel_priler_allow_auto_equip_when_cold|Авто надевать когда <font color="#87cefa">ХОЛОДНО</font>
+2110172017||panel_priler_allow_commenting_on_auto_equip|Разрешать <font color="#28a745">комментарии</font> при авто надевании плаща
+2110172018||panel_priler_auto_equip_cloaks_only|Авто надевать <font color="#8EA4C8">только плащи/накидки</font> <font size="17">(игнор шляпы/шарфы и тд)</font>
+2110172019||panel_priler_auto_equip_ignore_animation|Авто надевать всегда без анимаций
+2110172020||panel_priler_auto_equip_in_combat|Авто надевать <font color="#F54B59">В БОЮ</font> <font size="17">* в плохую погоду</font>
+2110172021||panel_priler_auto_equip_in_interior|Авто надевать <font color="#F07427">В ПОМЕЩЕНИЯХ</font> <font size="17">* в плохую погоду</font>
+2110172022||panel_priler_auto_equip_in_cutscenes|Авто надевать <font color="#FFDE80">ВО ВРЕМЯ КАТСЦЕН</font> <font size="17">* в плохую погоду</font>
+2110172023||panel_priler_auto_equip_anystate|Авто надевать <font color="#50C878">ПРИ ЛЮБОМ ДЕЙСТВИИ</font> <font size="17">(плавает, прыгает и тд)</font> <font size="17">* в плохую погоду</font>
+2110172024||preset_value_njs_cloaks_only|Только плащи
+2110172025||preset_value_njs_hoods_only|Только капюшоны
+2110172026||panel_priler_mod_enabled|Мод <font color="#39D686">ВКЛЮЧЕН?</font>
+2110172027||panel_priler_section_general|Основные
+2110172028||panel_priler_section_auto_equip|Авто надевание
+2110172029||panel_priler_section_auto_unequip|Авто снятие
+2110172030||panel_priler_section_other|Другое
+2110172031||panel_priler_auto_unequip_in_combat|Авто снимать <font color="#F54B59">В БОЮ</font>
+2110172032||panel_priler_auto_unequip_in_interior|Авто снимать <font color="#F07427">В ПОМЕЩЕНИЯХ</font>
+2110172033||panel_priler_auto_unequip_in_cutscenes|Авто снимать <font color="#FFDE80">ВО ВРЕМЯ КАТСЦЕН</font>
+2110172034||preset_value_njs_disable|Выключить
+2110172035||preset_value_njs_enable|Включить
+2110172036||preset_Mods_priler_switchable_cloak_priler_section_general|Автор мода Priler / Основные настройки
+2110172037||preset_Mods_priler_switchable_cloak_priler_section_auto_equip|Автор мода Priler / Авто Надевание
+2110172038||preset_Mods_priler_switchable_cloak_priler_section_auto_unequip|Автор мода Priler / Авто Снятие
+2110172039||preset_Mods_priler_switchable_cloak_priler_section_other|Автор мода Priler / Другое
+2110172040||panel_priler_auto_unequip_ignore_animation|Авто снимать всегда без анимаций <font size="17">(лучше включить)</font>
+2110172041||panel_priler_auto_equip_back_in_combat|Авто надевать обратно <font color="#F54B59">ПОСЛЕ БОЯ</font>
+2110172042||panel_priler_auto_equip_back_in_interior|Авто надевать обратно <font color="#F07427">ВНЕ ПОМЕЩЕНИЙ</font>
+2110172043||panel_priler_auto_equip_back_in_cutscenes|Авто надевать обратно <font color="#FFDE80">ПОСЛЕ КАТСЦЕН</font>
+2110172044||panel_priler_auto_unequip_cloaks_only|Авто снимать <font color="#8EA4C8">только плащи/накидки</font> <font size="17">(игнор шляпы/шарфы и тд)</font>
