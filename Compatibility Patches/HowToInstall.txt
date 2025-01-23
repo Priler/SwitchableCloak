@@ -1,0 +1,11 @@
+Just unpack mod_hoodsSwitchableCloakCPWCloakOfInvisibility folder to your "Mods" folder.
+That's it.
+
+
+!!! IMPORTANT: This compatibility patch is only for SwitchableCloaks 1.9.1+ only.
+!!!
+!!! PLEASE PAY ATTENTION !!!
+!!!
+!!! If updating the patch from previous versions of SwitchableCloaks mod, make sure to re-install InvisibilityCloak mod as well.
+!!! That includes complete removal of "modCloakOfInvisibility" folder, and then re-installing that mod again.
+!!! Otherwise it will not work with newest version of SwitchableCloaks.
