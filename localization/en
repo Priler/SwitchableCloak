@@ -1,20 +1,20 @@
 ;meta[language=en]
 ; id | key(hex) | key(str) | text
 2110172000||panel_Mods|Mods
-2110172001||panel_priler_switchable_cloak|Switchable Cloak
+2110172001||panel_priler_switchable_cloak|Switchable Cloaks
 2110172002||panel_priler_is_debug_enabled|Is debug
-2110172003||panel_priler_unequip_during_fist_fight_minigame|Unequip during fist fight minigame
+2110172003||panel_priler_unequip_during_fist_fight_minigame|Unequip during <font color="#F54B59">FIST FIGHT</font>
 2110172004||panel_priler_allow_hoods_etc|Enable for hoods/scarfs/masks
-2110172005||preset_Mods_priler_switchable_cloak_|Switchable Cloak by Priler
+2110172005||preset_Mods_priler_switchable_cloak_|Switchable Cloaks by <font color="#1FD655">PRILER</font>
 2110172006||preset_value_njs_default|Default
 2110172007||preset_value_njs_all|All
 2110172008||panel_priler_play_cloak_animations|Animate cloaks/capes
 2110172009||panel_priler_play_hood_animations|Animate hoods/scarfs/masks
 2110172010||panel_priler_allow_switch_on_horse|Allow toggling while horse riding
-2110172011||panel_priler_unequip_during_barber|Unequip during barber visits
+2110172011||panel_priler_unequip_during_barber|Unequip during <font color="#B691EB">BARBER</font> visits
 2110172013||panel_priler_allow_auto_equip_when_rain|Auto equip cloak during <font color="#bdda57">RAIN</font> weather
 2110172014||panel_priler_allow_auto_equip_when_storm|Auto equip cloak during <font color="#8EA4C8">STORM</font> weather
-2110172015||panel_priler_allow_auto_equip_when_snow|Auto equip cloak during <font color="#42aaff">SNOW</font> weather
+2110172015||panel_priler_allow_auto_equip_when_snow|Auto equip cloak during <font color="#C7E6FF">SNOW</font> weather
 2110172016||panel_priler_allow_auto_equip_when_cold|Auto equip cloak during <font color="#87cefa">COLD</font> weather
 2110172017||panel_priler_allow_commenting_on_auto_equip|Allow <font color="#28a745">comments</font> when auto equip
 2110172018||panel_priler_auto_equip_cloaks_only|Auto equip <font color="#8EA4C8">only cloaks/capes</font> <font size="16">(ignore hoods/scarfs etc)</font>
@@ -35,12 +35,17 @@
 2110172033||panel_priler_auto_unequip_in_cutscenes|Auto unequip <font color="#FFDE80">DURING CUTSCENES</font>
 2110172034||preset_value_njs_disable|Disable
 2110172035||preset_value_njs_enable|Enable
-2110172036||preset_Mods_priler_switchable_cloak_priler_section_general|Mod by Priler / General settings
-2110172037||preset_Mods_priler_switchable_cloak_priler_section_auto_equip|Mod by Priler / Auto Equip
-2110172038||preset_Mods_priler_switchable_cloak_priler_section_auto_unequip|Mod by Priler / Auto Unequip
-2110172039||preset_Mods_priler_switchable_cloak_priler_section_other|Mod by Priler / Other
+2110172036||preset_Mods_priler_switchable_cloak_priler_section_general|Mod by <font color="#1FD655">PRILER</font> / General settings
+2110172037||preset_Mods_priler_switchable_cloak_priler_section_auto_equip|Mod by <font color="#1FD655">PRILER</font> / Auto Equip
+2110172038||preset_Mods_priler_switchable_cloak_priler_section_auto_unequip|Mod by <font color="#1FD655">PRILER</font> / Auto Unequip
+2110172039||preset_Mods_priler_switchable_cloak_priler_section_other|Mod by <font color="#1FD655">PRILER</font> / Other
 2110172040||panel_priler_auto_unequip_ignore_animation|Auto unequip force no animation <font size="17">(better turn on)</font>
 2110172041||panel_priler_auto_equip_back_in_combat|Auto equip back <font color="#F54B59">AFTER COMBAT</font>
 2110172042||panel_priler_auto_equip_back_in_interior|Auto equip back when <font color="#F07427">LEAVING INTERIORS</font>
 2110172043||panel_priler_auto_equip_back_in_cutscenes|Auto equip back <font color="#FFDE80">AFTER CUTSCENES</font>
 2110172044||panel_priler_auto_unequip_cloaks_only|Auto unequip <font color="#8EA4C8">only cloaks/capes</font> <font size="16">(ignore hoods/scarfs etc)</font>
+2110172045||panel_priler_allow_auto_equip_when_windy|Auto equip cloak during <font color="#E2C08D">WIND</font>
+2110172046||panel_priler_auto_unequip_during_swimming|Auto unequip while <font color="#42aaff">SWIMMING</font>
+2110172047||panel_priler_auto_equip_back_after_swimming|Auto equip back after <font color="#42aaff">SWIMMING</font>
+2110172048||panel_priler_equip_back_after_fist_fight_minigame|Equip back after <font color="#F54B59">FIST FIGHT</font>
+2110172049||panel_priler_equip_back_after_barber|Equip back after <font color="#B691EB">BARBER</font> visits

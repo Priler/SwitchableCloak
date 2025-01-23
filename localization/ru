@@ -3,18 +3,18 @@
 2110172000||panel_Mods|Моды
 2110172001||panel_priler_switchable_cloak|Переключаемые Плащи
 2110172002||panel_priler_is_debug_enabled|Дебаг включен
-2110172003||panel_priler_unequip_during_fist_fight_minigame|Снимать плащ в кулачных боях
+2110172003||panel_priler_unequip_during_fist_fight_minigame|Снимать плащ в <font color="#F54B59">КУЛАЧНЫХ БОЯХ</font>
 2110172004||panel_priler_allow_hoods_etc|Учитывать капюшоны/шарфы/шляпы/маски
-2110172005||preset_Mods_priler_switchable_cloak|Переключаемые Плащи от Priler
+2110172005||preset_Mods_priler_switchable_cloak|Переключаемые Плащи от <font color="#1FD655">PRILER</font>
 2110172006||preset_value_njs_default|По умолчанию
 2110172007||preset_value_njs_all|Всё
 2110172008||panel_priler_play_cloak_animations|Анимация плащей/накидок
 2110172009||panel_priler_play_hood_animations|Анимация капюшонов/шарфов/шляп/масок
 2110172010||panel_priler_allow_switch_on_horse|Разрешать переключать верхом на лошади
-2110172011||panel_priler_unequip_during_barber|Снимать во время визита к парикмахеру
+2110172011||panel_priler_unequip_during_barber|Снимать во время визита к <font color="#B691EB">ПАРИКМАХЕРУ</font>
 2110172013||panel_priler_allow_auto_equip_when_rain|Авто надевать плащ в <font color="#bdda57">ДОЖДЬ</font>
 2110172014||panel_priler_allow_auto_equip_when_storm|Авто надевать плащ в <font color="#8EA4C8">ШТОРМ</font>
-2110172015||panel_priler_allow_auto_equip_when_snow|Авто надевать плащ в <font color="#42aaff">СНЕГ</font>
+2110172015||panel_priler_allow_auto_equip_when_snow|Авто надевать плащ в <font color="#C7E6FF">СНЕГ</font>
 2110172016||panel_priler_allow_auto_equip_when_cold|Авто надевать когда <font color="#87cefa">ХОЛОДНО</font>
 2110172017||panel_priler_allow_commenting_on_auto_equip|Разрешать <font color="#28a745">комментарии</font> при авто надевании плаща
 2110172018||panel_priler_auto_equip_cloaks_only|Авто надевать <font color="#8EA4C8">только плащи/накидки</font> <font size="17">(игнор шляпы/шарфы и тд)</font>
@@ -35,12 +35,17 @@
 2110172033||panel_priler_auto_unequip_in_cutscenes|Авто снимать <font color="#FFDE80">ВО ВРЕМЯ КАТСЦЕН</font>
 2110172034||preset_value_njs_disable|Выключить
 2110172035||preset_value_njs_enable|Включить
-2110172036||preset_Mods_priler_switchable_cloak_priler_section_general|Автор мода Priler / Основные настройки
-2110172037||preset_Mods_priler_switchable_cloak_priler_section_auto_equip|Автор мода Priler / Авто Надевание
-2110172038||preset_Mods_priler_switchable_cloak_priler_section_auto_unequip|Автор мода Priler / Авто Снятие
-2110172039||preset_Mods_priler_switchable_cloak_priler_section_other|Автор мода Priler / Другое
+2110172036||preset_Mods_priler_switchable_cloak_priler_section_general|Автор мода <font color="#1FD655">PRILER</font> / Основные настройки
+2110172037||preset_Mods_priler_switchable_cloak_priler_section_auto_equip|Автор мода <font color="#1FD655">PRILER</font> / Авто Надевание
+2110172038||preset_Mods_priler_switchable_cloak_priler_section_auto_unequip|Автор мода <font color="#1FD655">PRILER</font> / Авто Снятие
+2110172039||preset_Mods_priler_switchable_cloak_priler_section_other|Автор мода <font color="#1FD655">PRILER</font> / Другое
 2110172040||panel_priler_auto_unequip_ignore_animation|Авто снимать всегда без анимаций <font size="17">(лучше включить)</font>
 2110172041||panel_priler_auto_equip_back_in_combat|Авто надевать обратно <font color="#F54B59">ПОСЛЕ БОЯ</font>
 2110172042||panel_priler_auto_equip_back_in_interior|Авто надевать обратно <font color="#F07427">ВНЕ ПОМЕЩЕНИЙ</font>
 2110172043||panel_priler_auto_equip_back_in_cutscenes|Авто надевать обратно <font color="#FFDE80">ПОСЛЕ КАТСЦЕН</font>
 2110172044||panel_priler_auto_unequip_cloaks_only|Авто снимать <font color="#8EA4C8">только плащи/накидки</font> <font size="17">(игнор шляпы/шарфы и тд)</font>
+2110172045||panel_priler_allow_auto_equip_when_windy|Авто надевать когда <font color="#E2C08D">ВЕТРЕННО</font>
+2110172046||panel_priler_auto_unequip_during_swimming|Авто снимать во время <font color="#42aaff">ПЛАВАНИЯ</font>
+2110172047||panel_priler_auto_equip_back_after_swimming|Авто надевать обратно после <font color="#42aaff">ПЛАВАНИЯ</font>
+2110172048||panel_priler_equip_back_after_fist_fight_minigame|Надевать обратно после <font color="#F54B59">КУЛАЧНЫХ БОЕВ</font>
+2110172049||panel_priler_equip_back_after_barber|Надевать обратно после визита к <font color="#B691EB">ПАРИКМАХЕРУ</font>

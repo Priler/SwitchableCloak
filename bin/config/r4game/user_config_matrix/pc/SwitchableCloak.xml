@@ -9,7 +9,9 @@
 					<Entry varId="PlayCloakAnimations"  value="true"/>
 					<Entry varId="PlayHoodAnimations"  value="true"/>
 					<Entry varId="UnequipDuringFistFightMinigame" value="true"/>
+					<Entry varId="EquipBackAfterFistFightMinigame" value="false"/>
 					<Entry varId="UnequipDuringBarber" value="true"/>
+					<Entry varId="EquipBackAfterBarber" value="false"/>
 					<Entry varId="AllowForHoodsEtc"  value="true"/>
 					<Entry varId="AllowSwitchOnHorse"  value="true"/>
 				</Preset>
@@ -18,8 +20,21 @@
 					<Entry varId="PlayCloakAnimations"  value="true"/>
 					<Entry varId="PlayHoodAnimations"  value="false"/>
 					<Entry varId="UnequipDuringFistFightMinigame" value="true"/>
+					<Entry varId="EquipBackAfterFistFightMinigame" value="false"/>
 					<Entry varId="UnequipDuringBarber" value="true"/>
+					<Entry varId="EquipBackAfterBarber" value="false"/>
 					<Entry varId="AllowForHoodsEtc"  value="false"/>
+					<Entry varId="AllowSwitchOnHorse"  value="true"/>
+				</Preset>
+				<Preset id="2" displayName="njs_all">
+					<Entry varId="ModEnabled"  value="true"/>
+					<Entry varId="PlayCloakAnimations"  value="true"/>
+					<Entry varId="PlayHoodAnimations"  value="true"/>
+					<Entry varId="UnequipDuringFistFightMinigame" value="true"/>
+					<Entry varId="EquipBackAfterFistFightMinigame" value="true"/>
+					<Entry varId="UnequipDuringBarber" value="true"/>
+					<Entry varId="EquipBackAfterBarber" value="true"/>
+					<Entry varId="AllowForHoodsEtc"  value="true"/>
 					<Entry varId="AllowSwitchOnHorse"  value="true"/>
 				</Preset>
 			</PresetsArray>
@@ -31,7 +46,10 @@
 				<Var id="PlayHoodAnimations" displayName="panel_priler_play_hood_animations" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 
 				<Var id="UnequipDuringFistFightMinigame" displayName="panel_priler_unequip_during_fist_fight_minigame" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="EquipBackAfterFistFightMinigame" displayName="panel_priler_equip_back_after_fist_fight_minigame" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+
 				<Var id="UnequipDuringBarber" displayName="panel_priler_unequip_during_barber" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="EquipBackAfterBarber" displayName="panel_priler_equip_back_after_barber" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 
 				<Var id="AllowSwitchOnHorse" displayName="panel_priler_allow_switch_on_horse" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 			</VisibleVars>
@@ -45,6 +63,7 @@
 					<Entry varId="AllowAutoEquipWhenStorm"  value="false"/>
 					<Entry varId="AllowAutoEquipWhenSnow"  value="false"/>
 					<Entry varId="AllowAutoEquipWhenCold"  value="false"/>
+					<Entry varId="AllowAutoEquipWhenWindy"  value="false"/>
 					<Entry varId="AllowCommentingOnAutoEquip"  value="false"/>
 					<Entry varId="AutoEquipCloaksOnly"  value="false"/>
 					<Entry varId="AutoEquipIgnoreAnimation"  value="false"/>
@@ -57,7 +76,8 @@
 					<Entry varId="AllowAutoEquipWhenRain"  value="true"/>
 					<Entry varId="AllowAutoEquipWhenStorm"  value="true"/>
 					<Entry varId="AllowAutoEquipWhenSnow"  value="true"/>
-					<Entry varId="AllowAutoEquipWhenCold"  value="true"/>
+					<Entry varId="AllowAutoEquipWhenCold"  value="false"/>
+					<Entry varId="AllowAutoEquipWhenWindy"  value="false"/>
 					<Entry varId="AllowCommentingOnAutoEquip"  value="true"/>
 					<Entry varId="AutoEquipCloaksOnly"  value="false"/>
 					<Entry varId="AutoEquipIgnoreAnimation"  value="false"/>
@@ -71,8 +91,9 @@
 					<Entry varId="AllowAutoEquipWhenStorm"  value="true"/>
 					<Entry varId="AllowAutoEquipWhenSnow"  value="true"/>
 					<Entry varId="AllowAutoEquipWhenCold"  value="true"/>
+					<Entry varId="AllowAutoEquipWhenWindy"  value="true"/>
 					<Entry varId="AllowCommentingOnAutoEquip"  value="true"/>
-					<Entry varId="AutoEquipCloaksOnly"  value="false"/>
+					<Entry varId="AutoEquipCloaksOnly"  value="true"/>
 					<Entry varId="AutoEquipIgnoreAnimation"  value="true"/>
 					<Entry varId="AutoEquipInCombat"  value="true"/>
 					<Entry varId="AutoEquipInInterior"  value="true"/>
@@ -85,6 +106,7 @@
 				<Var id="AllowAutoEquipWhenStorm" displayName="panel_priler_allow_auto_equip_when_storm" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 				<Var id="AllowAutoEquipWhenSnow" displayName="panel_priler_allow_auto_equip_when_snow" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 				<Var id="AllowAutoEquipWhenCold" displayName="panel_priler_allow_auto_equip_when_cold" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AllowAutoEquipWhenWindy" displayName="panel_priler_allow_auto_equip_when_windy" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 
 				<Var id="AllowCommentingOnAutoEquip" displayName="panel_priler_allow_commenting_on_auto_equip" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 				<Var id="AutoEquipCloaksOnly" displayName="panel_priler_auto_equip_cloaks_only" displayType="TOGGLE" tags="customNames;customDisplayName"/>
@@ -104,9 +126,11 @@
 					<Entry varId="AllowAutoUnequipInCombat"  value="false"/>
 					<Entry varId="AllowAutoUnequipInInterior"  value="false"/>
 					<Entry varId="AllowAutoUnequipInCutscenes"  value="false"/>
+					<Entry varId="AllowAutoUnequipDuringSwimming"  value="false"/>
 					<Entry varId="AllowAutoEquipBackInCombat"  value="false"/>
 					<Entry varId="AllowAutoEquipBackInInterior"  value="false"/>
 					<Entry varId="AllowAutoEquipBackInCutscenes"  value="false"/>
+					<Entry varId="AllowAutoEquipBackAfterSwimming"  value="false"/>
 					<Entry varId="AutoUnequipCloaksOnly" value="false"/>
 					<Entry varId="AutoUnequipIgnoreAnimation" value="false"/>
 				</Preset>
@@ -114,9 +138,11 @@
 					<Entry varId="AllowAutoUnequipInCombat"  value="true"/>
 					<Entry varId="AllowAutoUnequipInInterior"  value="true"/>
 					<Entry varId="AllowAutoUnequipInCutscenes"  value="true"/>
+					<Entry varId="AllowAutoUnequipDuringSwimming"  value="true"/>
 					<Entry varId="AllowAutoEquipBackInCombat"  value="false"/>
 					<Entry varId="AllowAutoEquipBackInInterior"  value="false"/>
 					<Entry varId="AllowAutoEquipBackInCutscenes"  value="false"/>
+					<Entry varId="AllowAutoEquipBackAfterSwimming"  value="false"/>
 					<Entry varId="AutoUnequipCloaksOnly" value="true"/>
 					<Entry varId="AutoUnequipIgnoreAnimation" value="true"/>
 				</Preset>
@@ -124,9 +150,11 @@
 					<Entry varId="AllowAutoUnequipInCombat"  value="true"/>
 					<Entry varId="AllowAutoUnequipInInterior"  value="true"/>
 					<Entry varId="AllowAutoUnequipInCutscenes"  value="true"/>
+					<Entry varId="AllowAutoUnequipDuringSwimming"  value="true"/>
 					<Entry varId="AllowAutoEquipBackInCombat"  value="true"/>
 					<Entry varId="AllowAutoEquipBackInInterior"  value="true"/>
 					<Entry varId="AllowAutoEquipBackInCutscenes"  value="true"/>
+					<Entry varId="AllowAutoEquipBackAfterSwimming"  value="true"/>
 					<Entry varId="AutoUnequipCloaksOnly" value="true"/>
 					<Entry varId="AutoUnequipIgnoreAnimation" value="true"/>
 				</Preset>
@@ -135,10 +163,12 @@
 				<Var id="AllowAutoUnequipInCombat" displayName="panel_priler_auto_unequip_in_combat" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 				<Var id="AllowAutoUnequipInInterior" displayName="panel_priler_auto_unequip_in_interior" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 				<Var id="AllowAutoUnequipInCutscenes" displayName="panel_priler_auto_unequip_in_cutscenes" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AllowAutoUnequipDuringSwimming" displayName="panel_priler_auto_unequip_during_swimming" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 
 				<Var id="AllowAutoEquipBackInCombat" displayName="panel_priler_auto_equip_back_in_combat" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 				<Var id="AllowAutoEquipBackInInterior" displayName="panel_priler_auto_equip_back_in_interior" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 				<Var id="AllowAutoEquipBackInCutscenes" displayName="panel_priler_auto_equip_back_in_cutscenes" displayType="TOGGLE" tags="customNames;customDisplayName"/>
+				<Var id="AllowAutoEquipBackAfterSwimming" displayName="panel_priler_auto_equip_back_after_swimming" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 				
 				<Var id="AutoUnequipCloaksOnly" displayName="panel_priler_auto_unequip_cloaks_only" displayType="TOGGLE" tags="customNames;customDisplayName"/>
 
