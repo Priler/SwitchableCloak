@@ -1,6 +1,1 @@
-- Auto equip during windy weather
-- Auto unequip/equip-back while swimming
-- Mod menu toggle for auto-equip after fist fight minigame
-- Mod menu toggle for auto-equip after barber visit
-- Bugfix: Weather double commenting
-- Small fixes
+- Caves, Dungeons etc is now not considered as interiors
