@@ -2,7 +2,7 @@
 [content]
 name = "SwitchableCloak"
 description = ""
-version = "1.6.3"
+version = "1.9.2"
 authors = ["Priler"]
 game_version = "4.04"
 scripts_root = "scripts"

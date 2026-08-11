@@ -21,27 +21,35 @@ statemachine class SwitchableCloakStateMachine
 		GotoState('CHIdle');
 	}
 
-	public function SetHoodOnAnim() {
+	public function SetHoodOnAnim() : bool {
 		if (CanPerformAnim() && !IsPlayingAnim() && !CannotPlayAnim())
 		{
 			animationType = "hoodon";
 
 			SheatheSwordAndPlayAnimation();
+
+			return true;
 		}
+
+		return false;
 	}
 
 
-	public function SetHoodOffAnim() {
+	public function SetHoodOffAnim() : bool {
 		if (CanPerformAnim() && !IsPlayingAnim() && !CannotPlayAnim())
 		{
 			animationType = "hoodoff";
 
 			SheatheSwordAndPlayAnimation();
+
+			return true;
 		}
+
+		return false;
 	}
 
 
-	public function SetCapeOnAnim() {
+	public function SetCapeOnAnim() : bool {
 		LogChannel('modSwitchableCloak', "Set cape on anim ...");
 		LogChannel('modSwitchableCloak', "CanPerformAnim: " + CanPerformAnim());
 		LogChannel('modSwitchableCloak', "IsPlayingAnim: " + IsPlayingAnim());
@@ -52,11 +60,15 @@ statemachine class SwitchableCloakStateMachine
 
 			BlockActions(true);
 			SheatheSwordAndPlayAnimation();
+
+			return true;
 		}
+
+		return false;
 	}
 
 
-	public function SetCapeOffAnim() {
+	public function SetCapeOffAnim() : bool {
 		LogChannel('modSwitchableCloak', "Set cape off anim ...");
 		LogChannel('modSwitchableCloak', "CanPerformAnim: " + CanPerformAnim());
 		LogChannel('modSwitchableCloak', "IsPlayingAnim: " + IsPlayingAnim());
@@ -67,7 +79,11 @@ statemachine class SwitchableCloakStateMachine
 
 			BlockActions(true);
 			SheatheSwordAndPlayAnimation();
+
+			return true;
 		}
+
+		return false;
 	}
 
 
@@ -296,6 +312,8 @@ state CHInterruption in SwitchableCloakStateMachine
 		GetWitcherPlayer().RemoveTimer('SwitchableCloakPerformAnimationDelayed');
 		// GetWitcherPlayer().RemoveTimer('TimerToggleVanityItemOff');
 		// GetWitcherPlayer().RemoveTimer('TimerToggleVanityItemOn');
+
+		thePlayer.ArdCloakSwitch.EnableToggle();
 	}
 }
 
@@ -304,12 +322,20 @@ function GetSwitchableCloakStateMachine() : SwitchableCloakStateMachine
 {
 	var playerWitcher : W3PlayerWitcher = GetWitcherPlayer();
 
+	if (!playerWitcher)
+		return NULL;
+
 	return playerWitcher.switchableCloakSM;
 }
 
 function SwitchableCloakGetPerformingAnimationState() : SwitchableCloakStateMachineStateCHAnim
 {
-	return GetSwitchableCloakStateMachine().GetPerformingAnimationState();
+	var stateMachine : SwitchableCloakStateMachine = GetSwitchableCloakStateMachine();
+
+	if (!stateMachine)
+		return NULL;
+
+	return stateMachine.GetPerformingAnimationState();
 }
 
 @addField(W3PlayerWitcher) public var switchableCloakSM: SwitchableCloakStateMachine;
@@ -332,11 +358,16 @@ var hood_on : bool;
 
 @wrapMethod(W3PlayerWitcher) function OnTakeDamage(action : W3DamageAction)
 {
+	var animState : SwitchableCloakStateMachineStateCHAnim;
+
 	wrappedMethod(action);
 
-	if (switchableCloakSM.IsPlayingAnim())
+	if (switchableCloakSM && switchableCloakSM.IsPlayingAnim())
 	{
-		SwitchableCloakGetPerformingAnimationState().InterruptAnimOnTakeDamage(action);
+		animState = SwitchableCloakGetPerformingAnimationState();
+
+		if (animState)
+			animState.InterruptAnimOnTakeDamage(action);
 	}
 }
 
